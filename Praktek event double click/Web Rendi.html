@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Praktek Event Double Click Rendi</title>
+    <link rel="stylesheet" href="DesignWebRendi.css">
+	<script src="jquery-3.6.4.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".box").dblclick(function() {
+            var colorClass = "";
+            switch($(this).css("background-color")) {
+                case "rgb(255, 255, 0)":
+                    colorClass = "blue";
+                    break;
+                case "rgb(0, 128, 0)":
+                    colorClass = "red";
+                    break;
+                case "rgb(0, 0, 255)":
+                    colorClass = "green";
+                    break;
+                case "rgb(128, 0, 128)":
+                    colorClass = "purple";
+                    break;
+            }
+            $(this).removeClass();
+            $(this).addClass("box " + colorClass);
+        });
+    });
+</script>
+</head>
+<body>
+<h1>Klik 2x pada kotak untuk mengubah warna</h1>
+<div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+</body>
+</html>

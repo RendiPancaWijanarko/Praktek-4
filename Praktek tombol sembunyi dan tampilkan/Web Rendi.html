@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>Praktek Tombol Rendi</title>
+    <link rel="stylesheet" href="DesignWebRendi.css">
+	<script src="jquery-3.6.4.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#hide-btn-1").click(function(){
+				$("#image-1").fadeOut();
+			});
+			$("#show-btn-1").click(function(){
+				$("#image-1").fadeIn();
+			});
+            $("#hide-btn-2").click(function(){
+				$("#image-2").fadeOut();
+			});
+			$("#show-btn-2").click(function(){
+				$("#image-2").fadeIn();
+			});
+            $("#hide-btn-3").click(function(){
+				$("#image-3").fadeOut();
+			});
+			$("#show-btn-3").click(function(){
+				$("#image-3").fadeIn();
+			});
+            $("#hide-btn-4").click(function(){
+				$("#image-4").fadeOut();
+			});
+			$("#show-btn-4").click(function(){
+				$("#image-4").fadeIn();
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<button id="hide-btn-1">Hide Image 1</button>
+	<button id="show-btn-1">Show Image 1</button>
+    <br>
+    <button id="hide-btn-2">Hide Image 2</button>
+	<button id="show-btn-2">Show Image 2</button>
+    <br>
+    <button id="hide-btn-3">Hide Image 3</button>
+	<button id="show-btn-3">Show Image 3</button>
+    <br>
+    <button id="hide-btn-4">Hide Image 4</button>
+	<button id="show-btn-4">Show Image 4</button>
+	<div class="image-container">
+		<img id="image-1" src="GAMBAR/FOTO FORMAL BACKGROUND PUTIH.png" alt="image-1">
+		<img id="image-2" src="GAMBAR/Foto hoodie hitam.jpg" alt="image-2">
+        <img id="image-3" src="GAMBAR/Sok ganteng.jpg" alt="image-3">
+        <img id="image-4" src="GAMBAR/Troll face.jpg" alt="image-4">
+	</div>
+</body>
+</html>

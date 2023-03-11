@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Praktek Fade Rendi</title>
+    <link rel="stylesheet" href="DesignWebRendi.css">
+	<script src="jquery-3.6.4.js"></script>
+	<script>
+	$(document).ready(function() {
+        $("#fade-in").click(function() {
+            $("#box").fadeIn();
+        });
+        $("#fade-out").click(function() {
+            $("#box").fadeOut();
+        });
+        $("#fade-to").click(function() {
+            $("#box").fadeTo("slow", 0.3);
+        });
+        $("#reset").click(function() {
+            $("#box").fadeTo("slow", 1);
+        });
+    });
+	</script>
+</head>
+<body>
+	<div id="box"></div>
+	<div class="button-container">
+		<button id="fade-in">Fade In</button>
+		<button id="fade-out">Fade Out</button>
+		<button id="fade-to">Fade To 0.3</button>
+        <button id="reset">Reset</button>
+	</div>
+</body>
+</html>
